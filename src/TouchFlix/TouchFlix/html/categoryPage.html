@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>categoryPage</title>
+    
+    <!-- WinJS references -->
+    <link rel="stylesheet" href="/winjs/css/ui-dark.css" />
+    <script type="ms-deferred/javascript" src="/winjs/js/base.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/ui.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/binding.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/controls.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/animations.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/uicollections.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/wwaapp.js"></script>
+    
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/categoryPage.css" />
+    <script type="ms-deferred/javascript" src="/js/categoryPage.js"></script>
+</head>
+<body>
+    <!-- This template is used to display each item in the ListView declared below. -->
+    <div class="itemTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="largeTileTextTemplate">
+            <div class="largeTileTextTemplateBackground" data-win-bind="style.backgroundColor: backgroundColor"></div>
+            <div class="largeTileTextTemplateOverlay">
+                <div class="largeTileTextTemplateLargeText" data-win-bind="textContent: title"></div>
+                <div class="largeTileTextTemplateSmallText" data-win-bind="textContent: description"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="categoryPage fragment">
+        <header role="banner" aria-label="Header content">
+            <button disabled class="win-backbutton" aria-label="Back"></button>
+            <div class="titleArea">
+                <h1 class="pageTitle win-title">TouchFlix</h1>
+            </div>
+        </header>
+        <section role="main" aria-label="Main content">
+            <div class="categoryList"
+                 data-win-control="WinJS.UI.ListView"
+                 data-win-options="{layout: {type: WinJS.UI.GridLayout}, selectionMode: 'none'}"
+                 aria-label="Categories">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
