@@ -1,0 +1,182 @@
+﻿
+.splitPage .itemList {
+    height: 100%;
+    width: 100%;
+}
+
+.splitPage .win-itemText {
+    font-family: Segoe UI;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 15pt;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+.splitPage .pageTitle {
+    -ms-grid-column: 2;
+}
+
+.splitPage .win-itemTextStrong {
+    font-family: Segoe UI Semibold;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 15pt;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+.splitPage .win-itemTextTertiary {
+    font-family: Segoe UI;
+    font-size: 9pt;
+    letter-spacing: 0.02em;
+    line-height: 15pt;
+    opacity: 0.49;
+    overflow: hidden;
+}
+
+.splitPage {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 568px 1fr;
+    -ms-grid-rows: 132px 1fr 0px;
+}
+
+.splitPage header[role=banner] {
+    display: -ms-grid;
+    -ms-grid-columns: 120px 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+.splitPage .itemListSection {
+    -ms-grid-row: 2;
+    margin-left: 112px;
+}
+
+.splitPage .articleSection {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    margin-left: 80px;
+    margin-right: 64px;
+    padding-right: 24px;
+    overflow-y: auto;
+}
+
+.splitPage .articleSection header {
+    display: -ms-grid;
+    -ms-grid-columns: 242px 20px 1fr;
+    -ms-grid-rows: 230px;
+    margin-top: 60px;
+}
+
+.splitPage .articleSection .image {
+    width: 242px;
+    height: 230px;
+}
+
+.splitPage .articleSection .text {
+    -ms-grid-column: 3;
+}
+
+.splitPage .articleSection h1 {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.splitPage .articleSection h2 {
+    margin: 0px;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.splitPage .articleSection .description {
+    text-overflow: ellipsis;
+}
+
+.splitPage .articleSection .content {
+    margin-top: 16px;
+    overflow-y: auto;
+}
+
+.splitPage .articleSection .content p {
+    margin-bottom: 16pt;
+}
+
+.splitPage .itemList .win-item {
+    height: 124px;
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.splitPage .itemList .largeIconTextTemplate {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 124px 12px 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+.splitPage .itemList .largeIconTextTemplateBackground {
+    -ms-grid-column: 3;
+    overflow: hidden;
+}
+
+@media screen and (-ms-view-state: snapped) {
+.splitPage .win-contentTitle {
+    font-size: 11pt;
+    line-height: 15pt;
+}
+
+.splitPage {
+    -ms-grid-columns: 320px 0px;
+    -ms-grid-rows: 132px 1fr 0px;
+}
+
+.splitPage .itemListSection {
+    margin-left: 4px;
+}
+
+.splitPage header[role=banner] {
+    display: -ms-grid;
+    -ms-grid-columns: 44px 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+.splitPage .itemList .win-item {
+    width: 282px;
+    height: 64px;
+    padding: 8px 0px 8px 8px;
+    margin-bottom: 0px;
+}
+
+.splitPage .itemList .largeIconTextTemplate {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 64px 8px 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+.splitPage .itemList .largeIconTextTemplateLargeText {
+    max-height: 30pt;
+    overflow: hidden;
+}
+
+.splitPage .itemList .largeIconTextTemplateMediumText {
+    display: none;
+}
+
+.splitPage .win-itemTextStrong {
+    font-family: Segoe UI;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 15pt;
+    opacity: 0.8;
+    overflow: hidden;
+}
+}

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>splitPage</title>
+
+    <!-- WinJS references -->
+    <link rel="stylesheet" href="/winjs/css/ui-dark.css" />
+    <script type="ms-deferred/javascript" src="/winjs/js/base.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/ui.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/binding.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/controls.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/animations.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/uicollections.js"></script>
+    <script type="ms-deferred/javascript" src="/winjs/js/wwaapp.js"></script>
+    
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/splitPage.css" />
+    <script type="ms-deferred/javascript" src="/js/splitPage.js"></script>
+</head>
+<body>
+    <!-- This template is used to display each item in the ListView declared below. -->
+    <div class="itemTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="largeIconTextTemplate">
+            <div class="largeIconTextTemplateImage" data-win-bind="style.backgroundColor: backgroundColor"></div>
+            <div class="largeIconTextTemplateBackground">
+                <div class="largeIconTextTemplateLargeText win-itemTextStrong" data-win-bind="textContent: title"></div>
+                <div class="largeIconTextTemplateSmallText win-itemTextTertiary" data-win-bind="textContent: subtitle"></div>
+                <div class="largeIconTextTemplateMediumText win-itemText" data-win-bind="textContent: description"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="splitPage fragment">
+        <header role="banner" aria-label="Header content">
+            <button disabled class="win-backbutton" aria-label="Back"></button>
+            <h1 class="pageTitle win-title"></h1>
+        </header>
+        <section class="itemListSection">
+            <div class="itemList"
+                    data-win-control="WinJS.UI.ListView" 
+                    data-win-options="{dataSource: splitPage.items, oniteminvoked: splitPage.itemInvoked,  layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none' }"></div>
+        </section>
+        <section class="articleSection" aria-live="assertive" aria-atomic="true" aria-label="Item detail">
+            <header class="header">
+                <div class="image" data-win-bind="style.backgroundColor: backgroundColor; style.backgroundImage: backgroundImage; alt: title"></div>
+                <div class="text">
+                    <h1 class="title win-contentTitle" data-win-bind="textContent: title"></h1>
+                    <h2 class="subtitle win-itemText" data-win-bind="textContent: subtitle"></h2>
+                    <p class="description" data-win-bind="textContent: description"></p>
+                </div>
+            </header>
+            <article class="content" data-win-bind="innerHTML: content"></article>
+        </section>
+    </div>
+</body>
+</html>
