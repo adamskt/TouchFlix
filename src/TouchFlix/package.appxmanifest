@@ -2,14 +2,14 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
 
   <Identity
-    Name="1ec5b913-b70f-45ba-99da-6f1b7c919491"
+    Name="aa7ae4c7-db49-473d-ab00-b3fa647fc48a"
     Version="1.0.0.0"
-    Publisher="CN=kelly" />
+    Publisher="CN=Kelly" />
 
   <Properties>
     <DisplayName>TouchFlix</DisplayName>
     <Description>TouchFlix</Description>
-    <PublisherDisplayName>kelly</PublisherDisplayName>
+    <PublisherDisplayName>Kelly</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
 
@@ -19,7 +19,7 @@
   </Prerequisites>
 
   <Resources>
-    <Resource Language="en-US" />
+    <Resource Language="x-generate" />
   </Resources>
 
   <Applications>
@@ -33,9 +33,9 @@
         SmallLogo="images\smalllogo.png"
         Description="TouchFlix"
         ForegroundText="light"
-        BackgroundColor="#0084FF">
+        BackgroundColor="#000000">
 
-        <DefaultTile ShowName="true" />
+        <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" />
 
       </VisualElements>
