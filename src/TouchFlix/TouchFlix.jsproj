@@ -65,10 +65,17 @@
     <Content Include="images\storelogo.png" />
     <Content Include="js\groupDetailPage.js" />
     <Content Include="js\default.js" />
+    <Content Include="js\jasmine-1.1.0\jasmine-html.js" />
+    <Content Include="js\jasmine-1.1.0\jasmine.css" />
+    <Content Include="js\jasmine-1.1.0\jasmine.js" />
+    <Content Include="js\jasmine-1.1.0\jasmine_favicon.png" />
+    <Content Include="js\jasmine-1.1.0\MIT.LICENSE" />
     <Content Include="js\navigator.js" />
     <Content Include="js\data.js" />
     <Content Include="js\itemDetailPage.js" />
     <Content Include="js\groupedItemsPage.js" />
+    <Content Include="tests\default.tests.js" />
+    <Content Include="tests\SpecRunner.html" />
     <None Include="TouchFlix_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
