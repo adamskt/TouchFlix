@@ -13,6 +13,7 @@
   [System.Collections.Hashtable]$properties = @{}
 )
 
+
 $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $buildPath = (Resolve-Path $scriptPath\build)
 
@@ -25,3 +26,4 @@ if($env:BUILD_NUMBER) {
 } else {
   exit $lastexitcode
 }
+
